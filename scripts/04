@@ -1,0 +1,8 @@
+touch file
+crontab file
+echo "@midnight \
+	a=\"\$(md5sum /etc/crontab | awk '{print $1}')\" && \
+	b=\"\$(cat /etc/crontab.log)\" && \
+	if [ '\$a' != '$\b'] ; then \
+		'\$a' > /etc/crontab.log && \
+		mail -s 'modified' root ; fi" > file 

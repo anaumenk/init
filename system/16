@@ -1,0 +1,6 @@
+touch file
+crontab file (create)
+crontab  -e (edit)
+15 3 * * * ~/script.sh (example - everyday 03:15 run .sh)
+
+cron

@@ -1,0 +1,5 @@
+web server || ns1
+
+cat /etc/resolv.conf | grep "nameserver" | awk '{print $2}'
+
+nslookup 10.51.1.253

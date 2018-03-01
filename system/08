@@ -1,0 +1,7 @@
+ssh-keygen
+
+(passphrase: password)
+Your identification has been saved in key.
+Your public key has been saved in key.pub
+
+(authorized_keys)
